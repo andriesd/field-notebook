@@ -1,0 +1,31 @@
+{% extends "notebook/index.html" %}
+
+{% block content %}
+{% if object_data %}
+    
+    <div class="profile_container">
+       
+        <img class="monument_image" src="/media/{{object_data.object_image}}" alt="Image of object appears here">
+    
+        <div class="info_container">
+            <h1 class="monument_name">{{object_data.object_name}}</h1>
+            <ul class="monument_info">
+                <li>Year: {{object_data.year_created}}</li>
+                <li>Location: {{object_data.location}}</li>
+                <li>Location Created: {{object_data.location_created}}</li>
+                <li>Giver: {{object_data.giver}}</li>
+                <li>Receiver: {{object_data.receiver}}</li>
+                <li>Creator: {{object_data.object_creator}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="monument_notes">
+        <h2>Notes:</h2>
+            <p class="notes_text">{{object_data.background_notes}}</p>
+    </div>
+    
+{% else %}
+    <p>You haven't entered any data yet.</p>
+{% endif %}    
+{% endblock %}
+

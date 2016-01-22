@@ -1,0 +1,17 @@
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+DOCUMENTATION FOR FIELD NOTEBOOK
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+============================
+ADMIN AND DEVELOPMENT SERVER
+============================
+The following instructions are for setting up your Admin Page, so you can get started entering data into your Field Notebook.
+
+1. Follow instructions for 'Quick Start' in README.rst for initial installation. 
+
+2. Run `python manage.py createsuperuser' to create super user for admin. Follow command line prompts.
+
+3. Once your superuser account has been created successfully, start the development server. To start the development server, run `python
+manage.py runserver`. The default port used after running this command is port 8000. If you would like to use a different port, enter `python manage.py runserver <port>`, e.g., `python manage.py runserver 8080`. Visit http://127.0.0.1:8000/admin/ to start entering data.
+
+For further reference on modifying the admin interface or changing the models and URL configurations, please see tutorials and documentation for Django at https://docs.djangoproject.com/en/1.9/

@@ -1,0 +1,16 @@
+{% extends "notebook/index.html" %}
+
+{% block content %}
+
+<h1 class="page_heading">Creators</h1>
+{% if creator_list %}
+    <ul>
+    {% for creator in creator_list %}
+        <li><a href="/notebook/guide/creators/{{creator.creator_name}}/">{{ creator }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p class="empty">You haven't entered any creators yet.</p>
+{% endif %}
+
+{% endblock %}

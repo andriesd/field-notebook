@@ -1,0 +1,17 @@
+{% extends "notebook/index.html" %}
+
+{% block content %}
+{% if creator %}
+<h1 class="page_heading">Objects created by {{creator}}</h1>
+{% endif %}
+{% if monuments %}
+    <ul>
+    {% for monument in monuments %}
+        <li><a href="/monuments/guide/monuments/monument_detail/{{monument.slug}}/">{{ monument }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No records found for this creator.</p>
+{% endif %}
+{% endblock %}
+

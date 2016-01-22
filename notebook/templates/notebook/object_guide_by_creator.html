@@ -1,0 +1,17 @@
+{% extends "notebook/index.html" %}
+
+{% block content %}
+{% if creator %}
+<h1 class="page_heading">Created by {{creator}}</h1>
+{% endif %}
+{% if objects %}
+    <ul>
+    {% for artifact in objects %}
+        <li><a href="/notebook/guide/objects/object_detail/{{artifact.slug}}/">{{ artifact }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p class="empty">No artifacts found for this creator.</p>
+{% endif %}
+{% endblock %}
+

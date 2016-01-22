@@ -1,0 +1,15 @@
+{% extends "notebook/index.html" %}
+
+{% block content %}
+<h1 class="page_heading">Places</h1>
+{% if place_list %}
+    <ul>
+    {% for place in place_list %}
+        <li><a href="/notebook/guide/places/{{place.place_name}}/">{{ place }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p class="empty">You haven't entered any places yet.</p>
+{% endif %}
+
+{% endblock %}

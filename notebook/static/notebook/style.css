@@ -1,0 +1,158 @@
+header {
+	background-color: black;
+	text-align: center;
+	padding: 1.5%;
+}
+
+.notebook_heading{
+	color: white;
+	font-size: 250%;
+	font-family: sans-serif;
+
+}
+
+nav a{
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	font-size: 200%;
+	background-color: black;
+	padding-left: 5%;
+	padding-right: 5%;
+	font-family: sans-serif;
+}
+
+nav a:hover, .active{
+	color: #FF0000;
+}
+
+nav a:focus{
+	background-color: #cbbea4;
+}
+
+.intro_text{
+	text-align: center;
+	font-size: 150%;
+	font-family: sans-serif;
+}
+
+.empty{
+	text-align: center;
+	font-size: 150%;
+	font-family: sans-serif;
+}
+
+.intro{
+	padding-right: 25%;
+	padding-left: 25%;
+}
+
+/*intermediate pages*/
+.page_heading{
+	text-align: center;
+	font-family: sans-serif;
+}
+
+.section_heading{
+	text-align: center;
+	font-family: sans-serif;
+}
+
+ul{
+	padding: 0;
+	list-style-type: none;
+	font-size: 190%;	
+	text-align: center;
+	font-family: sans-serif;
+}
+
+.explanatory{
+	font-size: 170%;	
+	text-align: center;
+	font-family: sans-serif;
+}
+
+/*monument detail*/
+.profile_container{
+	border: medium solid;
+	margin-top: 2%;
+}
+.monument_info{
+	list-style-type: none;
+	padding: 0;
+	font-size: 125%;
+	text-align: left;
+}
+
+.monument_image{
+	width: 95%;
+	padding: 1.5%;
+	margin: 0.5%;
+	text-align: center;
+}
+
+.info_container{
+	padding-left: 1.5%;
+	padding-right: 1.5%;
+	margin: 0.5%;
+	overflow: auto;
+}
+
+.monument_name{
+	font-family: sans-serif;
+}
+
+.monument_notes{
+	border: solid;
+	border-top: none;
+	padding: 1.5%;
+	font-size: 125%;
+	font-family: sans-serif;
+
+}
+
+h2{
+	font-size: 120%;
+	font-family: sans-serif;
+	padding: 0;
+	margin-bottom: 2px;
+	margin-top: 2px;
+}
+
+.notes_text{
+	margin-top: 2px;
+	font-size: 125%;
+	text-align: left;
+}
+
+@media only screen and (min-width: 1024px){	
+	.monument_image{
+		padding: 0;
+		float:left;
+		width: 45%;
+	}
+
+	.info_container{
+		padding-left: 5%;
+		float:right;
+		width: 45%;
+	}
+
+	.profile_container{
+		border: medium solid;
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-top: 2%;
+		overflow: auto;
+	}
+	.monument_notes{
+		border: solid;
+		border-top: none;
+		padding: 1.5%;
+		font-size: 125%;
+		font-family: sans-serif;
+		margin-left: 5%;
+		margin-right:5%;
+	}
+}
+

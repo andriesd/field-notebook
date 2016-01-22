@@ -1,0 +1,16 @@
+{% extends "notebook/index.html" %}
+
+{% block content %}
+{% if place %}
+<h1 class="page_heading">From {{ place }}</h1>
+{% endif %}
+{% if objects %}
+    <ul>
+    {% for artifact in objects %}
+        <li><a href="/notebook/guide/objects/object_detail/{{artifact.slug}}/">{{ artifact }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p class="empty">No artifacts found from this place.</p>
+{% endif %}
+{% endblock %}
