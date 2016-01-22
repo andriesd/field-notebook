@@ -2,7 +2,7 @@ Metadata-Version: 1.1
 Name: django-field-notebook
 Version: 0.1
 Summary: A simple Django app for storing digital field objects.
-Home-page: https://github.com/clarkdatalabs/django_field_notebook.git
+Home-page: https://github.com/andriesd/field-notebook.git
 Author: Daina Andries
 Author-email: andriesd@umich.edu
 License: BSD

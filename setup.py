@@ -15,7 +15,7 @@ setup(
     license='BSD',  # example license
     description='A simple Django app for storing digital field objects.',
     long_description=README,
-    url='https://github.com/clarkdatalabs/django_field_notebook.git',
+    url='https://github.com/andriesd/field-notebook.git',
     author='Daina Andries',
     author_email='andriesd@umich.edu',
     classifiers=[
